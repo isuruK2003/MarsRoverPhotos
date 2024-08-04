@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Mars Rover Photos</title>
+    <link rel="stylesheet" href="myStyles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>NASA Mars Rover Photos</h1>
+        </div>
+    </header>
+
+    <div class="modal" id="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-heading">
+                <span id="modal-image-name">
+                    <!-- Image name -->
+                </span>
+                <button class="close-btn" onclick="closeModal()">&#10005;</button>
+            </div>
+            <div class="modal-img">
+                <img id="modal-image" src="" alt="">
+            </div>
+            <div class="modal-table">
+                <table id="modal-table">
+                    <!-- Table By JS-->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="gallery">
+            <!-- The images will be dynamically added here -->
+        </section>        
+    </main>
+    <footer>
+        <hr>
+        <p>&COPY; 2024 Isuru Karunaratna. All rights reserved.</p>
+    </footer>
+    <script src="mrp.js"></script>
+</body>
+</html>

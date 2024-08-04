@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.close-btn {
+    background-color: #fff;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.close-btn:hover {
+    background-color: #eee;
+}
+
+/* Modal */
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    display: grid;
+    grid-template-rows: 10% 50% 40%;
+    height: 80vh;
+    width: 50vw;
+    max-height: 1000px;
+    max-width: 1000px;
+    min-width: 600px;
+    background-color: #fff;
+    border-radius: 1em;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.modal-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.modal-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-img img {
+    height: 100%;
+}
+
+.modal-table {
+    overflow: hidden;
+    padding: 1em;
+}
+
+.modal-table table {
+    overflow-wrap: break-word;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-table table td {
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Gallery */
+
+.gallery {
+    column-count: 4;
+    --webkit-column-count: 1;
+    --moz-column-count: 1;
+    gap: 1.25em;
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image {
+    position: relative;
+    cursor: pointer;
+}
+
+.image img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 1.25em;
+    image-rendering: optimizeSpeed;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        column-count: 3;
+        --webkit-column-count: 3;
+        --moz-column-count: 3;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gallery {
+        column-count: 2;
+        --webkit-column-count: 2;
+        --moz-column-count: 2;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery {
+        column-count: 1;
+        --webkit-column-count: 1;
+        --moz-column-count: 1;
+    }
+}
