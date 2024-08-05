@@ -2,7 +2,7 @@ const modalId = "modal";
 const modalImageId = "modal-image";
 const modalImageName = "modal-image-name";
 const modalTable = "modal-table";
-const apiKey = 'pF2kqAxZoGgfWCoq1y8bow65zDQggTTumqG3vh2F';
+const apiKey = 'DEMO_KEY';
 const apiUrl = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=${apiKey}`;
 
 
